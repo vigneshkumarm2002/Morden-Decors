@@ -2,12 +2,3 @@
 node_modules/
 
 
-# Ignore development environment files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Ignore log files and other generated files
-logs/
-*.log

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html,body{
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 1100px) {
+  body{
+    overflow-x: hidden;
+}
+}
+.gradient{
+    background: linear-gradient(180deg, #FBB009 0%, #F47220 100%);
+    }
+
+  .count{
+    @apply text-[#121212] text-[3vw] font-semibold leading-[66px] tracking-[-0.01em] max-med:text-[3vw] max-med:leading-[48px] max-sd:text-[3vw] max-sd:leading-[28px] max-[500px]:text-[3.5vw] max-[500px]:leading-[20px] ;
+  }
+  .makeCenter{
+    @apply  text-center font-medium text-base max-med:text-[14px]  max-med:leading-[22px] max-sd:text-[1.5vw]  max-sd:leading-[14px] max-[500px]:text-[1.8vw] max-[500px]:leading-[10px];
+  }
+
+  .list{
+    @apply text-[1.43vw] leading-[53.24px] font-medium text-[#121212] flex flex-row items-center gap-2 ml-3 max-med:leading-[40px] max-med:text-[1.7vw] max-med:ml-0 max-sd:ml-2 max-sd:text-[3vw] max-sd:leading-[44px] max-[500px]:text-[4vw] max-[500px]:leading-[43px]; 
+  }
+  .aligning{
+    @apply flex flex-col items-center justify-center
+  }
+
+  @media only screen and (max-width: 750px) {
+.center{
+  margin: 0;
+  position: absolute;
+  top:113%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  }
+  @media only screen and (min-width: 500px) and (max-width: 750px){
+    .error{
+    width:60%;
+    }
+    .errorcenter{
+      display: flex;
+      justify-content: center;
+    }
+
+  }
