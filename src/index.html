@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morden Decors</title>
+  <meta name="description" content="Welcome to our interior design website! Explore our collection of stylish and functional interior design ideas, tips, and inspiration. From modern to traditional, we offer design solutions for every style and budget. Get inspired and transform your space today.">
+  <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+  <link href="/public/styles.css" rel="stylesheet">
+  
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- --- 1st page ---- -->
+  <div id="home" class="w-screen h-full bg-primary relative  ">
+    <nav class="pt-8">
+      <ul class="font-poppins flex flex-row justify-between items-center text-white mx-[110px] mr-[120px] max-med:ml-[50px] max-med:mr-[60px] whitespace-nowrap max-sd:ml-[25px] max-sd:mr-[25px]  ">
+        <div class="flex flex-row items-center">
+          <img class="w-8 h-7" src="./assets/logo.png" />
+          <li><a class="font-bold text-xl max-med:text-base max-sd:text-[16px] " href="#">Morden Decors</a></li>
+        </div>
+        <div class="sd:hidden" onclick="openMenu()">
+          <img id="menuicon" src="menu.svg">
+        </div>
+        <div id="menu" class="flex flex-row items-center gap-10 text-lg  font-medium max-med:text-sm max-med:gap-6 max-sd:hidden max-sd:absolute max-sd:flex-col max-sd:justify-evenly max-sd:bg-white max-sd:text-black max-sd:w-[50%] max-sd:rounded-[12px] max-sd:top-[65px] max-sd:right-[25px] max-sd:ml-[-25px] max-sd:h-[auto] max-sd:py-[20px] max-sd:z-50">
+          <li><a href="#">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><button class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px]"
+              href="#">Consultation</button></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="flex flex-row justify-between  gap-18 ml-[110px] whitespace-nowrap max-med:ml-[50px] max-med:mr-[60px] max-med:gap-9 max-sd:mx-[25px] max-sd:justify-center ">
+      <div class="mt-[106px] mb-[100px] font-poppins flex flex-col gap-8 max-med:mt-[40px] max-med:gap-6 max-med:mb-[70px] max-sd:mb-[200px] max-sd:gap-7 max-[500px]:gap-4">
+        <h1 class="text-[#F4F4F4] text-[3.889vw] font-bold leading-[80px] tracking-[-0.01em] max-med:mt-[2.85vw] max-med:leading-[62px] max-sd:text-[6.2vw] max-sd:text-center max-sd:leading-[55px] max-[500px]:text-[9vw] max-[500px]:leading-[50px] ">Relish the magic <br> of
+          bespoke <br> interior design</h1>
+        <p class="text-white text-[1.389vw] font-semibold leading-[34px] tracking-[-0.01em] max-med:text-[1.5vw] max-med:leading-[28px] max-sd:text-[2.2vw] max-sd:text-center max-sd:leading-[23px] max-sd:mx-[30px] max-[500px]:text-[3.3vw] max-[500px]:leading-[23px]">Discover the beauty of
+          bespoke
+          interior design.<br>
+          Our experts will design a space that's functional,<br>
+          stylish, and uniquely yours.</p>
+        <div class="flex flex-row gap-10  mt-4 flex-wrap text-lg max-med:text-[1.5vw] max-med:w-[82%] max-med:gap-3 max-med:justify-between max-sd:self-center max-sd:text-[14px] max-[500px]:text-[3.6vw] max-sd:w-[70%] max-sd:mt-3">
+          <button  class="consult gradient font-semibold text-[#121212] rounded-md w-[182px] h-[50px] max-med:w-[45%] max-med:h-[42px] max-sd:w-[46%] max-sd:h-[40px]" href="#">Get
+            Started</button>
+          <div class="gradient font-semibold text-[#F4F4F4] rounded-md w-[182px] h-[50px] max-med:w-[45%] max-med:h-[42px] max-sd:w-[46%] max-sd:h-[40px]" href="#">
+            <button class="bg-primary rounded-md w-[178px] h-[46px] mt-[2px] ml-[2px] max-med:w-[97%] max-med:h-[38px] max-[850px]:w-[96%] max-sd:w-[96.5%] max-sd:h-[36px]"><a href="./gallery.html"> View Gallery </a></button>
+          </div>
+        </div>
+      </div>
+      <div class=" w-[50%] absolute bottom-[-35px] right-[-10px] mt-[150px] flex flex-col gap-6 max-sd:gap-4  max-med:gap-4 max-med:right-[-20px] max-med:w-[55%] max-med:bottom-[-5px] max-med:h-[78%] max-sd:mt-[30px] max-[500px]:mt-[5px] max-sd:w-[70%] max-[500px]:w-[100%] max-sd:px-[25px]  center">
+        <img class="w-[100%] h-[420px] rounded-3xl object-cover max-med:h-[70%] max-sd:h-[220px] max-[500px]:rounded-[14px]" src="./images/1.jpg" alt="InteriorDesign" />
+        <div class="flex flex-row justify-between gap-6 max-med:h-[30%] max-med:gap-4 max-sd:w-[100%] max-sd:gap-0">
+          <img class="w-[50%] h-[190px] rounded-2xl object-cover max-med:h-[100%] max-sd:h-[100px] max-sd:w-[48%] max-[500px]:rounded-[9px]" src="./images/pic2.jpeg" alt="InteriorDesign" />
+          <img class="w-[50%] h-[190px] rounded-2xl object-cover max-med:h-[100%] max-sd:h-[100px] max-sd:w-[48%] max-[500px]:rounded-[9px]" src="./images/pic3.jpg" alt="InteriorDesign" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 2nd page ---- -->
+  <div class="font-[poppins] w-screen h-full bg-white max-sd:mt-[120px] errorcenter ">
+    <div class=" mx-[110px] mr-[120px] pt-[120px] pb-[90px] relative max-med:ml-[50px] max-med:mr-[60px] max-med:pt-[90px] max-med:pb-[60px] whitespace-nowrap max-sd:mx-[25px] max-sd:pt-[90px] max-[500px]:pt-[60px] max-sd:pb-[40px] error ">
+      <img class="absolute top-[90px] right-[3px] max-med:w-[240px] max-med:top-[85px] max-sd:top-[115px] max-sd:w-[80px] max-[500px]:top-[85px]" src="./assets/rounds.svg" />
+      <div class=" flex flex-row ">
+        <div class="w-[45%] mt-20 flex flex-col justify-between gap-12 max-med:mt-16 max-med:gap-8 max-sd:w-[50%] max-sd:mt-12 max-sd:gap-3">
+          <h1 class="text-[#121212] text-[3vw] font-bold leading-[66px] mr-[100px] tracking-[-0.01em] max-med:text-[3vw] max-med:leading-[48px] max-sd:text-[2.5vw] max-sd:leading-[28px] max-[500px]:text-[3.7vw] max-[500px]:leading-[22px] ">Custom design for <br>
+            your <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FBB009] to-[#F47220] ">unique
+            </span> taste</h1>
+          <div class="z-40 w-[100%] h-[320px] bg-[#fbb0092e] rounded-[40px] flex justify-center items-center max-med:h-[280px] max-sd:h-[100px] max-sd:rounded-[13px]  ">
+            <img class="p-6 w-[100%]  h-[320px] rounded-[50px] object-cover max-med:h-[280px] max-med:p-4 max-sd:h-[100px] max-sd:p-2 max-sd:rounded-[13px]" src="./images/5.jpg" />
+          </div>
+        </div>
+        <div class=" z-30 ml-[-74px] w-[56%] mt-10 flex flex-col gap-10 items-end max-med:w-[58%] max-med:gap-8 max-sd:w-[52%] max-sd:ml-[-20px] max-sd:gap-4 ">
+          <img class="w-[100%] h-[357px] rounded-[40px] object-cover max-med:h-[300px] max-sd:h-[120px] max-sd:rounded-[13px]" src="./images/4.jpg" />
+          <div class="w-[75%] mr-5 flex flex-row justify-between items-end max-med:mr-4 max-med:w-[72%] max-med:gap-2 max-sd:pb-2">
+            <div class="aligning">
+              <h1 class="count">25+</h1>
+              <p class="makeCenter"> Years of<br>
+                Excellence</p>
+            </div>
+
+            <div class="aligning">
+              <h1 class="count">100+</h1>
+              <p class="makeCenter">Experienced<br>
+                Designers</p>
+            </div>
+
+            <div class="aligning">
+              <h1 class="count">16K+</h1>
+              <p class="makeCenter">Esteemed<br>
+                Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 3rd page ---- -->
+  <div id="services"  class="font-[poppins] w-screen h-[full] bg-primary flex   ">
+    <div class=" [100%] h-[100%] px-[110px] pr-[120px] flex flex-row justify-between max-med:pl-[50px] max-med:pr-[60px] max-sd:mx-[25px] max-sd:flex-col-reverse max-sd:px-[0px] max-sd:pr-[0px] max-sd:items-center ">
+
+      <div class="  w-[50%] flex flex-row relative max-sd:justify-between  max-sd:w-[60%] max-[500px]:w-[100%]">
+        <div class="  w-[85%] h-[650px] max-med:h-[550px] max-sd:h-[280px] max-[500px]:w-[90%]   ">
+          <img class="w-[100%] mt-[70px] h-[105%] rounded-[20px] object-cover  max-med:mt-[60px]  max-sd:mt-[0px] max-sd:h-[125%] max-[500px]:rounded-[13px]  " src="./images/6.jpg" />
+        </div>
+        <div class="  bottom-[0px] right-[0px] absolute self-end mb-[-75px]  max-med:mb-[-55px] max-med:right-[-35px] max-sd:right-[-10px] max-[500px]:mb-[-47px] max-[500px]:right-[-10px] ">
+          <div class="w-[20vw] h-[360px] mb-[-74px] rounded-2xl bg-primary max-[500px]:rounded-[11px] max-med:h-[270px] max-med:mb-[-54px] max-sd:h-[210px] max-[500px]:h-[195px] max-sd:w-[28vw]  max-[500px]:w-[37vw]  max-sd:mb-[-30px] max-[500px]:mb-[-46px]">
+            <img class=" p-[14px] w-full h-[360px] rounded-3xl max-[500px]:rounded-[15px] object-cover max-med:h-[270px] max-med:p-[10px] max-sd:p-[8px] max-[500px]:p-[6px] max-sd:h-[235px] max-[500px]:h-[195px]" src="./images/7.jpg" />
+          </div>
+
+          <div class="w-[20vw] h-[75px] rounded-b-2xl max-[500px]:rounded-b-[11px] bg-white max-med:w-[23vw] max-med:h-[55px]  max-sd:w-[28vw] max-[500px]:w-[37vw] max-[500px]:h-[47px]  ">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w-[42%] pt-[100px] pb-[60px] flex flex-col gap-9 justify-center whitespace-nowrap max-med:pt-[75px] max-med:pb-[45px] max-med:gap-5 max-sd:pt-[40px] max-[500px]:w-auto error">
+        <h1 class="text-[2.39vw] font-bold leading-[55px] text-[#F4F4F4] max-med:text-[2.7vw] max-med:leading-[44px] max-sd:text-[4vw] max-sd:leading-[37px] max-[500px]:text-[6.2vw] max-[500px]:leading-[37px]">We create distinct designs<br>
+          that depicts the essence <br>
+          of your own style.</h1>
+        <p class="text-[1.4vw] font-medium leading-[32px] text-[#f4f4f480] whitespace-normal text-justify max-med:text-[1.7vw] max-med:leading-[28px] max-sd:text-[13px] max-sd:leading-[19px]">We believe that every individual has a
+          unique  sense
+          of
+          style, and we strive to capture the  essence of that
+          style in each design we create. From modern and minimalist to classic and traditional, we have the
+          expertise
+          to
+          bring any  design concept to life.</p>
+        <div class="flex flex-row gap-3 ">
+          <h2 class="text-[1.5vw] underline font-bold text-[#F4F4F4] max-med:text-[1.7vw] max-sd:text-[14px] max-sd:leading-[20px] ">View all services </h2>
+          <img class="mt-1 max-sd:w-[30px]" src="./assets/Arrow.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 4th page ---- -->
+  <div class="mt-[200px] font-[poppins] w-screen h-full max-med:mt-[170px] max-sd:mt-[120px]">
+    <div class="pl-[140px] pr-[120px] w-[100%]  flex flex-row justify-between items-center max-med:pl-[50px] max-med:pr-[60px] max-sd:px-[25px] max-sd:flex-col max-sd:gap-10">
+      <div class=" flex flex-col gap-5 max-med:gap-4 ">
+        <h1 class="text-[#121212] text-[3vw] font-bold leading-[66px] tracking-[-0.01em] max-med:leading-[48px] max-med:text-[3vw] max-sd:text-[6vw] max-sd:text-center max-sd:leading-[55px] max-[500px]:text-[8vw] max-[500px]:leading-[50px] ">We strive to serve <br>
+          the <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FBB009] to-[#F47220] ">best</span> for
+          you</h1>
+        <ul>
+          <li class="list"><img src="./assets/Star.svg" alt="">Minimal and Modern furniture</li>
+          <li class="list"><img src="./assets/Star.svg" alt="">Premium Decorative for room</li>
+          <li class="list"><img src="./assets/Star.svg" alt="">Top-Notch Kitchen items</li>
+          <li class="list"><img src="./assets/Star.svg" alt="">Classic and Elite outdoor decor</li>
+        </ul>
+      </div>
+      <div class="w-[57%] h-[425px]  flex flex-row justify-between items-center gap-6 max-med:w-[60%] max-med:h-[340px] max-med:gap-3 max-sd:w-[60%] max-[500px]:w-[100%] max-sd:h-[250px]">
+        <img class="w-[58%] h-[100%] rounded-3xl object-cover max-sd:rounded-[14px] max-[500px]:rounded-[10px]" src="./images/8.jpg" alt="">
+        <div class="w-[42%] h-[100%] flex flex-col justify-between gap-6 max-med:gap-3 max-sd:gap-0">
+          <img class="w-[100%] h-[48%] rounded-2xl object-cover max-sd:rounded-[14px] max-[500px]:rounded-[10px]" src="./images/9.jpg" alt="">
+          <img class="w-[100%] h-[48%] rounded-2xl object-cover max-sd:rounded-[14px] max-[500px]:rounded-[10px] " src="./images/10.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- --- 5th page ---- -->
+  <div class="my-[100px]  font-[poppins] w-screen h-[100%]  max-med:my-[80px] max-med:mb-[100px] max-sd:my-[50px] max-sd:mb-[80px]">
+    <div class=" pl-[140px] flex flex-row items-center gap-14 max-med:pl-[50px] max-sd:gap-3 max-sd:pl-[30px]">
+      <h1 class="text-[#121212] text-[3vw] font-bold leading-[66px] tracking-[-0.01em] whitespace-nowrap max-sd:text-[22px] max-[500px]:text-[5.4vw]">Customer
+        Review</h1>
+      <div class="w-[100%] h-[50px] bg-primary max-med:h-[40px] max-sd:h-[18px]"></div>
+    </div>
+ <div class="errorcenter">
+    <div class="ml-[150px] mr-[150px] flex flex-col gap-12 max-med:ml-[50px] max-med:mr-[60px] max-sd:mx-[25px] max-sd:gap-9 error">
+      <div class="mt-[100px]  relative flex max-med:mt-[90px] max-sd:mt-[60px]">
+        <img class="absolute top-[-42px] left-[0px] max-med:w-[240px] max-sd:w-[135px]" src="./assets/rounds.svg" />
+        <div
+          class="shadow-[0px_2px_24px_rgba(149,157,165,0.35)] p-[30px] z-40 ml-[50px] w-[96%] h-[auto] flex flex-col rounded-3xl max-[500px]:rounded-[13px] bg-white max-med:ml-[42px] max-med:p-[24px] max-sd:p-[30px] max-sd:ml-[22px] max-sd:mt-[-20px]">
+          <div class="flex flex-row items-center gap-5 max-sd:gap-3">
+            <img class="w-[50px] h-[50px] rounded-full max-sd:w-[30px] max-sd:h-[30px] object-cover" src="./images/av1.jpg" />
+            <h1 class="text-[#121212] text-[2vw] font-semibold max-med:text-[2.1vw] max-sd:text-[17px] ">Aravindh Srinivasan</h1>
+          </div>
+          <p class="ml-[70px] text-[1.5vw] font-medium text-justify text-[#12121280] max-med:text-[1.7vw] max-sd:text-[12px] max-sd:ml-[5px] max-sd:mt-[15px] ">The designer really listened to my vision and
+            helped me create a space that feels both stylish and functional. I highly recommend this shop to anyone
+            looking
+            to elevate their home's interior design.</p>
+        </div>
+      </div>
+      <div class=" relative flex">
+
+        <div
+          class=" p-[30px] shadow-[0px_2px_24px_rgba(149,157,165,0.2)] z-40 mr-[50px] w-[96%] h-[auto] flex flex-col rounded-3xl max-[500px]:rounded-[13px] bg-white max-med:mr-[42px] max-med:p-[24px] max-sd:p-[30px] max-sd:mr-[20px] max-sd:mb-[-15px]">
+          <div class="flex flex-row items-center gap-5 max-sd:gap-3  ">
+            <img class="w-[50px] h-[50px] rounded-full max-sd:w-[30px] max-sd:h-[30px] object-cover" src="./images/av2.jpg" />
+            <h1 class="text-[#121212] text-[2vw] font-semibold max-med:text-[2.1vw] max-sd:text-[17px]">Priya Dev Kumar</h1>
+          </div>
+          <p class="ml-[70px] text-[1.5vw] font-medium text-justify text-[#12121280] max-med:text-[1.7vw] max-sd:text-[12px] max-sd:ml-[5px] max-sd:mt-[15px]">If you're looking for a professional interior
+            designing shop that can bring your vision to life while also ensuring functionality, I highly recommend this
+            shop.The furniture and decor provided were of exceptional quality.</p>
+        </div>
+        <img class="absolute bottom-[-42px] right-[0px] max-med:w-[240px] max-med:bottom-[-36px] max-sd:w-[135px]" src="./assets/rounds.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- --- 6th page ---- -->
+  <div id="About" class="py-[80px] font-[poppins] w-screen h-[full]  bg-primary text-white max-sd:py-[55px] max-sd:pb-[60px]">
+    <div class="ml-[110px] mr-[140px] h-[300px] flex flex-row justify-between gap-10 max-med:ml-[50px] max-med:mr-[60px] max-med:h-[250px] max-sd:mx-[25px] max-sd:flex-col max-sd:h-[100%] max-sd:items-center max-sd:text-center">
+      <div class="flex flex-col justify-between max-sd:items-center">
+        <div>
+          <div class="flex flex-row items-center ">
+            <img class="w-8 h-7" src="./assets/logo.png" />
+            <div><a class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]" href="#">Morden Decors</a></div>
+          </div>
+          <p class="text-[18px] mt-[13px] font-[500] whitespace-nowrap max-med:text-[1.5vw] max-med:mt-[18px]  max-sd:text-[14px] max-sd:mt-[20px] c">No 2, 2nd Floor, Ashok towers,<br>
+            Mahatma Gandhi Nagar,<br>
+            2nd street, Chennai -600001</p>
+        </div>
+        <div class="flex flex-col gap-4 max-med:gap-3 max-sd:hidden">
+          <h1 class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px]" href="#">Contact Us</h1>
+          <p class="text-[18px] font-[500] max-med:text-[1.5vw] ">Ph 9800845612, 9986734567</p>
+          <div class="flex flex-row gap-8 max-med:gap-5">
+            <img class="max-med:w-[23px]" src="./assets/msg.svg">
+            <img class="max-med:w-[23px]" src="./assets/fb.svg">
+            <img class="max-med:w-[23px]" src="./assets/ins.svg">
+            <img class="max-med:w-[23px]"  src="./assets/ln.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="h-full text-[18px] font-[500] flex flex-col justify-between max-med:text-[1.5vw] max-sd:text-[14px] max-sd:gap-5 max-[500px]:text-[3.5vw]">
+          <h1 class="text-[22px] font-bold max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]">Our Services</h1>
+          <li>Consultation and suggestion</li>
+          <li>Art and Accessories delivery</li>
+          <li>Styling the finished space</li>
+          <li>Painting and Lighting works</li>
+          <li>Window treatments and coverings</li>
+          <li>Custom furniture design and fabrication</li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="h-full text-[18px] font-[500] flex flex-col justify-between max-med:text-[1.5vw] max-sd:text-[16px] max-sd:gap-5 max-[500px]:text-[3.8vw] ">
+          <h1 class="text-[22px] font-bold max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw] ">Useful Links</h1>
+          <li><a href="#">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li class="max-sd:hidden"><button class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px] "
+              href="#">Consultation</button></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4 max-med:gap-3 max-sd:gap-4 sd:hidden">
+        <h1 class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]" href="#">Contact Us</h1>
+        <p class="text-[18px] font-[500] max-med:text-[1.5vw] max-sd:text-[16px] max-[500px]:text-[3.5vw] ">Ph 9800845612, 9986734567</p>
+        <div class="flex flex-row gap-8 max-med:gap-5 max-sd:gap-0 max-sd:justify-between max-sd:mt-2">
+          <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/msg.svg">
+          <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/fb.svg">
+          <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/ins.svg">
+          <img class="max-med:w-[23px] max-sd:w-[24px]"  src="./assets/ln.svg">
+        </div>
+      </div>
+      <div class="sd:hidden"><button  class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px] max-sd:w-[172px] max-sd:h-[50px] max-sd:text-[18px]"
+        href="#">Consultation</button></div>
+    </div>
+  </div>
+
+  <script>
+    function openMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("max-sd:hidden");
+
+      if(menu.classList.contains("max-sd:hidden")){
+        document.getElementById("menuicon").src = "menu.svg";
+      }
+      else{
+        document.getElementById("menuicon").src = "close.svg";
+      }
+    }
+
+
+    var consultBtns = document.getElementsByClassName('consult');
+
+for (var i = 0; i < consultBtns.length; i++) {
+  consultBtns[i].addEventListener('click', function() {
+    var email = prompt("Enter your email:");
+    if (email) {
+      if (validateEmail(email)) {
+        alert("Thank you! We will contact you soon.");
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    }
+  });
+}
+
+function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+
+  </script>
+
+</body>
+
+</html>

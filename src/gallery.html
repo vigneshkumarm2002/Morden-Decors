@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morden Decors</title>
+    <meta name="description"
+        content="Welcome to our interior design website! Explore our collection of stylish and functional interior design ideas, tips, and inspiration. From modern to traditional, we offer design solutions for every style and budget. Get inspired and transform your space today.">
+    <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+    <link href="/public/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./gallery.css">
+
+</head>
+
+<body class="bg-primary">
+
+        <nav class="pt-8 bg-primary">
+            <ul
+                class="font-poppins flex flex-row justify-between items-center text-white mx-[110px]  mr-[120px] max-med:ml-[50px] max-med:mr-[60px] whitespace-nowrap max-sd:ml-[25px] max-sd:mr-[25px]  ">
+                <div class="flex flex-row items-center">
+                    <img class="w-8 h-7" src="./assets/logo.png" />
+                    <li><a class="font-bold text-xl max-med:text-base max-sd:text-[16px] " href="#">Morden Decors</a>
+                    </li>
+                </div>
+                <div class="sd:hidden" onclick="openMenu()">
+                    <img id="menuicon" src="menu.svg">
+                </div>
+                <div id="menu"
+                    class="flex flex-row items-center gap-10 text-lg  font-medium max-med:text-sm max-med:gap-6 max-sd:hidden max-sd:absolute max-sd:flex-col max-sd:justify-evenly max-sd:bg-white max-sd:text-black max-sd:w-[50%] max-sd:rounded-[12px] max-sd:top-[65px] max-sd:right-[25px] max-sd:ml-[-25px] max-sd:h-[auto] max-sd:py-[20px] max-sd:z-50">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><button 
+                            class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px]"
+                            href="#">Consultation</button></li>
+                </div>
+            </ul>
+        </nav>
+    <div id="gallery" class=" w-screen bg-primary ">
+    </div>
+
+    <!-- --- 6th page ---- -->
+    <div id="About"
+        class="py-[80px] font-[poppins] w-screen h-[full]  bg-primary text-white max-sd:py-[55px] max-sd:pb-[60px]">
+        <div
+            class="ml-[110px] mr-[140px] h-[300px] flex flex-row justify-between gap-10 max-med:ml-[50px] max-med:mr-[60px] max-med:h-[250px] max-sd:mx-[25px] max-sd:flex-col max-sd:h-[100%] max-sd:items-center max-sd:text-center">
+            <div class="flex flex-col justify-between max-sd:items-center">
+                <div>
+                    <div class="flex flex-row items-center ">
+                        <img class="w-8 h-7" src="./assets/logo.png" />
+                        <div><a class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]"
+                                href="#">Morden Decors</a></div>
+                    </div>
+                    <p
+                        class="text-[18px] mt-[13px] font-[500] whitespace-nowrap max-med:text-[1.5vw] max-med:mt-[18px]  max-sd:text-[14px] max-sd:mt-[20px] c">
+                        No 2, 2nd Floor, Ashok towers,<br>
+                        Mahatma Gandhi Nagar,<br>
+                        2nd street, Chennai -600001</p>
+                </div>
+                <div class="flex flex-col gap-4 max-med:gap-3 max-sd:hidden">
+                    <h1 class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px]" href="#">Contact Us</h1>
+                    <p class="text-[18px] font-[500] max-med:text-[1.5vw] ">Ph 9800845612, 9986734567</p>
+                    <div class="flex flex-row gap-8 max-med:gap-5">
+                        <img class="max-med:w-[23px]" src="./assets/msg.svg">
+                        <img class="max-med:w-[23px]" src="./assets/fb.svg">
+                        <img class="max-med:w-[23px]" src="./assets/ins.svg">
+                        <img class="max-med:w-[23px]" src="./assets/ln.svg">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul
+                    class="h-full text-[18px] font-[500] flex flex-col justify-between max-med:text-[1.5vw] max-sd:text-[14px] max-sd:gap-5 max-[500px]:text-[3.5vw]">
+                    <h1 class="text-[22px] font-bold max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]">
+                        Our Services</h1>
+                    <li>Consultation and suggestion</li>
+                    <li>Art and Accessories delivery</li>
+                    <li>Styling the finished space</li>
+                    <li>Painting and Lighting works</li>
+                    <li>Window treatments and coverings</li>
+                    <li>Custom furniture design and fabrication</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul
+                    class="h-full text-[18px] font-[500] flex flex-col justify-between max-med:text-[1.5vw] max-sd:text-[16px] max-sd:gap-5 max-[500px]:text-[3.8vw] ">
+                    <h1 class="text-[22px] font-bold max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw] ">
+                        Useful Links</h1>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./index.html#services">Services</a></li>
+                        <li><a href="#About">About Us</a></li>
+                    <li class="max-sd:hidden"><button 
+                            class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px] "
+                            href="#">Consultation</button></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-4 max-med:gap-3 max-sd:gap-4 sd:hidden">
+                <h1 class="font-bold text-[22px] max-med:text-[20px] max-sd:text-[22px] max-[500px]:text-[5.5vw]"
+                    href="#">Contact Us</h1>
+                <p class="text-[18px] font-[500] max-med:text-[1.5vw] max-sd:text-[16px] max-[500px]:text-[3.5vw] ">Ph
+                    9800845612, 9986734567</p>
+                <div class="flex flex-row gap-8 max-med:gap-5 max-sd:gap-0 max-sd:justify-between max-sd:mt-2">
+                    <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/msg.svg">
+                    <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/fb.svg">
+                    <img class="max-med:w-[23px] max-sd:w-[26px]" src="./assets/ins.svg">
+                    <img class="max-med:w-[23px] max-sd:w-[24px]" src="./assets/ln.svg">
+                </div>
+            </div>
+            <div class="sd:hidden"><button 
+                    class="consult gradient font-semibold text-[#121212] rounded-md w-[172px] h-[50px] max-med:w-[130px] max-med:h-[40px] max-sd:w-[172px] max-sd:h-[50px] max-sd:text-[18px]"
+                    href="#">Consultation</button></div>
+        </div>
+    </div>
+    <script src="./gallery.js"></script>
+    <script>
+        function openMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("max-sd:hidden");
+
+            if (menu.classList.contains("max-sd:hidden")) {
+                document.getElementById("menuicon").src = "menu.svg";
+            }
+            else {
+                document.getElementById("menuicon").src = "close.svg";
+            }
+        }
+        var consultBtns = document.getElementsByClassName('consult');
+
+for (var i = 0; i < consultBtns.length; i++) {
+  consultBtns[i].addEventListener('click', function() {
+    var email = prompt("Enter your email:");
+    if (email) {
+      if (validateEmail(email)) {
+        alert("Thank you! We will contact you soon.");
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    }
+  });
+}
+
+function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+    </script>
+
+</body>
+
+</html>
